@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    position: relative;
+}
+
+#blocco-principale {
+    background-color: whitesmoke;
+    position: absolute;
+    height: 450px;
+    width: 650px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+
+}
+
+
+#riga1 {
+    position: relative;
+    height: 200px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+ #riga2 {
+    position: relative;
+    height: 200px;
+    margin-left: 25px;
+}
+
+.oggetto {
+    height: 200px;
+    width: 200px;
+}
+
+.oggetto:hover p {
+    opacity: 1;
+}
+
+ .oggetto:first-child {
+    position: absolute;
+    background-image: url("https://static-it.gamestop.it/images/products/294075/3max.jpg");
+    background-size: cover;
+}
+
+ .oggetto:nth-last-child(2) {
+    position: absolute;
+    left: 200px;
+    background-image: url("https://static-it.gamestop.it/images/products/291392/3max.jpg");
+    background-size: cover;
+}
+
+ .oggetto:last-child {
+    position: absolute;
+    left: 400px;
+    background-image: url("https://static-it.gamestop.it/images/products/271963/3max.jpg");
+    background-size: cover;
+}
+
+.sconto {
+    position: absolute;
+    background-color: red;
+    height: 15px;
+    width: 30px;
+    top: 0px;
+    right: 0px;
+
+}
+.cuore {
+    text-align: center;
+    color: red;
+    opacity: 0;
+}
