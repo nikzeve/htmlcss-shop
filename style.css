@@ -38,10 +38,7 @@ main {
 .oggetto {
     height: 200px;
     width: 200px;
-}
-
-.oggetto:hover p {
-    opacity: 1;
+    position: absolute;
 }
 
  .oggetto:first-child {
@@ -71,10 +68,22 @@ main {
     width: 30px;
     top: 0px;
     right: 0px;
-
 }
-.cuore {
+
+.overlay {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.5);
+    display: none;
+}
+
+.overlay p {
     text-align: center;
     color: red;
-    opacity: 0;
+    font-size: 40px;
+}
+
+.oggetto:hover .overlay {
+    display: inline-block;
 }
